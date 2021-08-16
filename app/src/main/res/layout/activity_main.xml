@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"  android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="58dp"
+        android:orientation="horizontal">
+        <Button android:id="@+id/button"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_weight="1"  android:text="SHOW" />
+        <Button android:id="@+id/button2"
+            android:layout_width="wrap_content"  android:layout_height="wrap_content"
+            android:layout_weight="1" android:text="HIDE" /> </LinearLayout>
+    <ViewStub android:id="@+id/viewStub2"
+        android:layout_width="match_parent" android:layout_height="match_parent"
+        android:layout_marginTop="12dp"  android:layout_marginStart="2dp"
+        android:layout_alignParentStart="true"  android:layout_alignParentTop="true"
+        android:layout="@layout/custom" />
+    <LinearLayout
+        android:layout_width="match_parent" android:layout_height="match_parent"
+        android:gravity="center" android:padding="16dp" android:orientation="vertical">
+      <TextView
+          android:layout_width="wrap_content" android:layout_height="wrap_content"
+          android:text="Do You Like our App?" android:textSize="32sp"
+          android:textStyle="bold" android:background="@android:color/holo_orange_light"
+          android:fontFamily="sans-serif-smallcaps"/>
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:text="Give us a quick rating\nif you like it?"
+            android:textSize="18sp" android:textStyle="bold"
+            android:layout_marginTop="16dp" android:fontFamily="monospace"/>
+<Button android:layout_width="wrap_content"  android:layout_height="wrap_content"
+    android:id="@+id/bt" android:text="Rate Now" android:layout_marginTop="32dp"/>
+        <LinearLayout android:layout_width="387dp" android:layout_height="193dp"
+            android:orientation="vertical" android:padding="18dp">
+            <TextView android:id="@+id/textView" android:layout_width="371dp"
+                android:layout_height="119dp" android:textStyle="bold"
+                android:padding="10dp" android:textColor="#000" android:text="TextView" />
+            <Button android:id="@+id/button3" android:layout_width="371dp"
+                android:layout_height="wrap_content" android:text="SEE ASSETS FILE" />
+        </LinearLayout></LinearLayout></RelativeLayout>
